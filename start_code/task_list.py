@@ -24,6 +24,16 @@ def yes_tasks(list_chores):
 
     return completed_tasks
 
-finsihed_tasks = yes_tasks(tasks)
+def list_tasks(list_chores):
+    task_descriptions = []
+    for task in list_chores:
+        task_descriptions.append(task['description'])
+
+    return task_descriptions
+
+
+
+
+finsihed_tasks = list_tasks(tasks)
 
 print(finsihed_tasks)
