@@ -5,3 +5,17 @@ tasks = [
     { "description": "Feed Cat", "completed": False, "time_taken": 5 },
     { "description": "Walk Dog", "completed": True, "time_taken": 60 },
 ]
+
+
+
+def done_tasks(list_chores):
+    uncompleted_tasks = []
+    for task in list_chores:
+        if task["completed"] == False:
+            uncompleted_tasks.append(task["description"])
+
+    return uncompleted_tasks
+
+not_finsihed_tasks = done_tasks(tasks)
+
+print(not_finsihed_tasks)
