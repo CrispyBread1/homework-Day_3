@@ -25,9 +25,9 @@ tasks = [
 
 As a user, to manage my task list I would like a program that allows me to:
 
-1. Print a list of uncompleted tasks
+1. Print a list of uncompleted tasks --
 
-2. Print a list of completed tasks
+2. Print a list of completed tasks --
 
 3. Print a list of all task descriptions
 

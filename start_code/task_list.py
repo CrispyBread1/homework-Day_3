@@ -8,7 +8,7 @@ tasks = [
 
 
 
-def done_tasks(list_chores):
+def no_tasks(list_chores):
     uncompleted_tasks = []
     for task in list_chores:
         if task["completed"] == False:
@@ -16,6 +16,14 @@ def done_tasks(list_chores):
 
     return uncompleted_tasks
 
-not_finsihed_tasks = done_tasks(tasks)
+def yes_tasks(list_chores):
+    completed_tasks = []
+    for task in list_chores:
+        if task["completed"] == True:
+            completed_tasks.append(task["description"])
 
-print(not_finsihed_tasks)
+    return completed_tasks
+
+finsihed_tasks = yes_tasks(tasks)
+
+print(finsihed_tasks)
