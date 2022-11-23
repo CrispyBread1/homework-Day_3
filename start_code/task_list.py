@@ -40,7 +40,23 @@ def time_taken(list_chores):
 
     return time_lists
 
+def search_task(list_chores):
+    answer = []
+    task = input("Please provide task to get more information ")
+    for search in list_chores:
+        if task == search["description"]:
+            answer = search
 
-finsihed_tasks = time_taken(tasks)
+    return answer
+            
+answer = search_task(tasks)
 
-print(finsihed_tasks)
+print(answer)
+
+
+
+
+
+
+
+

@@ -33,7 +33,7 @@ As a user, to manage my task list I would like a program that allows me to:
 
 4. Print a list of tasks where time_taken is at least a given time --
 
-5. Print any task with a given description
+5. Print any task with a given description 
 
 
 ### Extension
