@@ -31,9 +31,16 @@ def list_tasks(list_chores):
 
     return task_descriptions
 
+def time_taken(list_chores):
+    time_lists = []
+    time_allowewd = int(input("How long do you have available to complete the task? "))
+    for task in list_chores:
+        if time_allowewd >= task["time_taken"]:
+           time_lists.append(task["description"])
+
+    return time_lists
 
 
-
-finsihed_tasks = list_tasks(tasks)
+finsihed_tasks = time_taken(tasks)
 
 print(finsihed_tasks)

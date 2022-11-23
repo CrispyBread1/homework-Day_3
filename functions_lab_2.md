@@ -29,9 +29,9 @@ As a user, to manage my task list I would like a program that allows me to:
 
 2. Print a list of completed tasks --
 
-3. Print a list of all task descriptions
+3. Print a list of all task descriptions -- 
 
-4. Print a list of tasks where time_taken is at least a given time
+4. Print a list of tasks where time_taken is at least a given time --
 
 5. Print any task with a given description
 
